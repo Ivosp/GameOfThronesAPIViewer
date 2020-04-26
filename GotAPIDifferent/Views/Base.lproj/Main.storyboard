@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VYJ-AT-OfA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BooksTableVC-->
+        <scene sceneID="1zW-dn-IDE">
+            <objects>
+                <tableViewController title="BooksTableVC" id="cjK-tH-b87" customClass="BooksTableVC" customModule="GotAPIDifferent" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qBC-BF-b3M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="cjK-tH-b87" id="wPm-qs-19Y"/>
+                            <outlet property="delegate" destination="cjK-tH-b87" id="Fta-Nx-5Jc"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Books" image="book" catalog="system" id="Uc4-Wc-ZQo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEl-Ug-dAm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="-565"/>
+        </scene>
+        <!--CharacterTableVC-->
+        <scene sceneID="mx9-fV-Eex">
+            <objects>
+                <tableViewController title="CharacterTableVC" id="RfV-bV-YGT" customClass="CharactersTableVC" customModule="GotAPIDifferent" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pHC-ll-tbd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="RfV-bV-YGT" id="tCw-Xd-5v3"/>
+                            <outlet property="delegate" destination="RfV-bV-YGT" id="bDj-Oq-m2q"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Characters" image="person" catalog="system" id="FIS-rG-UkM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IL6-wf-aqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="130"/>
+        </scene>
+        <!--HouseTableVC-->
+        <scene sceneID="4TO-vY-J9f">
+            <objects>
+                <tableViewController title="HouseTableVC" id="oi5-qz-qu0" customClass="HousesTableVC" customModule="GotAPIDifferent" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ShE-Cy-Lse">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="oi5-qz-qu0" id="kXC-Pw-atL"/>
+                            <outlet property="delegate" destination="oi5-qz-qu0" id="wn6-vb-KGx"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Houses" image="house" catalog="system" id="cmQ-CV-bMh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z67-OY-63L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="859"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Tjh-R3-BYS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VYJ-AT-OfA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Epg-H7-tHB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cjK-tH-b87" kind="relationship" relationship="viewControllers" id="3wF-dB-STh"/>
+                        <segue destination="RfV-bV-YGT" kind="relationship" relationship="viewControllers" id="dKj-Kh-Vem"/>
+                        <segue destination="oi5-qz-qu0" kind="relationship" relationship="viewControllers" id="RXM-S0-enu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoh-M6-yv5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204.34782608695653" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="101"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
+</document>
